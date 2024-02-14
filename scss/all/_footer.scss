@@ -1,0 +1,119 @@
+footer{
+    width: 100%;
+    padding: 80px 0px 30px;
+    background:  #008ECC;
+    overflow: hidden;
+
+    .footerwrap{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 150px;
+        color: #FFF;
+        padding-bottom: 80px;
+        border-bottom: 1px solid #05ABF3;
+        position: relative;
+        
+        &__left{
+
+            h3{
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+
+           
+
+            p{
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                gap: 11px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 20px;
+
+                i{
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &__center{
+
+            h3{
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                padding-bottom: 16px;
+                border-bottom: 3px solid #FFF;
+                margin-left: -20px;
+                margin-bottom: 20px;
+            }
+
+            ul{
+
+                li{
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 37px;
+                }
+            }
+        }
+
+        &__right{
+            h3{
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                padding-bottom: 16px;
+                border-bottom: 3px solid #FFF;
+                margin-left: -20px;
+                margin-bottom: 20px;
+            }
+
+            ul{
+
+                li{
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 37px;
+                }
+            }
+        }
+
+        &__div{   
+            position: absolute;
+            top: -190px;
+            right: -350px;
+            padding: 10px;
+            border: 1px solid #05ABF3;
+            border-radius: 50%;
+            div{
+                width: 434.492px;
+                height: 434.492px;
+                flex-shrink: 0;
+                border-radius: 50%;
+                background: #0C9BDA;
+            }
+        }
+    }
+
+    .footerwrap--botton{
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #ffffffaa;
+            text-align: center;
+            padding-top: 30px;
+        }
+    }
+}

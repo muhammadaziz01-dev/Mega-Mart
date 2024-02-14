@@ -1,0 +1,149 @@
+#section3{
+    width: 100%;
+    padding: 20px 0;
+
+    .section3__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 120px 0px 0px;
+        border-bottom: 1px solid #EDEDED;
+
+        h3{
+            color: var(--Text, #666);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            padding-bottom: 16px;
+            border-bottom: 3px solid #008ECC;
+
+            span{
+                color: #008ECC;
+            }
+        }
+
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px; 
+            color: var(--HEading, #222);
+            text-align: right;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18px;
+
+            i{
+                color: #008ECC;
+            }
+        }
+
+    }
+
+    .section3__center{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+        padding: 20px 0px;
+
+        select{
+            padding: 3px 12px;
+        }
+    }
+
+    .section3__cards{
+        width: 100%;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        row-gap: 20px;
+
+        &--card{
+            display: flex;
+            flex-direction: column;
+            width: 227px;
+            height: 312px;
+            flex-shrink: 0;
+            border-radius: 16px;
+            border: 1px solid var(--Border, #EDEDED);
+            background: var(--Backgorund-1, #F5F5F5);
+            position: relative;
+            cursor: pointer;
+            transition: all .2s linear;
+              
+            &:hover {
+                border: 1px solid #008ECC;
+                transition: all .2s linear;
+                box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 3px 7px 0px rgba(0, 0, 0, 0.05), 0px 13px 13px 0px rgba(0, 0, 0, 0.04), 0px 29px 18px 0px rgba(0, 0, 0, 0.03), 0px 52px 21px 0px rgba(0, 0, 0, 0.01), 0px 82px 23px 0px rgba(0, 0, 0, 0.00);
+                
+            }
+
+            &--img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+
+                img{
+                    width: 126px;
+                    height: 174px;
+                    object-fit: cover;
+                }
+            }
+
+            &--titil{
+                width: 225px;
+                height: 106px;
+                flex-shrink: 0;
+                border-radius: 0px 0px 15px 15px;
+                background: var(--White, #FFF);
+                padding: 12px;
+
+                &--pi1{
+                    color: var(--HEading, #222);
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    margin-bottom: 10px;
+                }
+                &--pi2{
+                    color: var(--HEading, #222);
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid  #EDEDED;
+                    span{
+                        color: var(--HEading, #222);
+                        font-weight: 400;
+                        line-height: 18px; 
+                        text-decoration:line-through;
+                    }
+                }
+
+                &--pi3{
+                    color: #249B3E;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    padding-top: 10px;
+                }
+            }
+
+            &-p{
+                width: 51px;
+                height: 53px;
+                flex-shrink: 0;
+                color: #FFF;
+                border-radius: 0px 16px;
+                background: var(--Primary, #008ECC);
+                padding: 11px;
+                position: absolute;
+                top: -1px;
+                right: -1px;
+            }
+        }
+    }
+}

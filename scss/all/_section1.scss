@@ -1,0 +1,38 @@
+#section1{
+    width: 100%;
+    padding: 16px 0;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+
+    .section__topwrp{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            display: flex;
+            align-items: center; 
+            justify-content:center;  
+            gap: 6px;
+            display: inline-flex;
+            padding: 9px 14px;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: 18px;
+            background: #F3F9FB;
+            cursor: pointer;
+            transition: all .2s linear;
+
+            &:hover{
+                background: #008ECC;
+                color: #FFF;
+                transition: all .2s linear;
+                svg path{
+                    
+                  fill: #FFF;
+                    
+                }     
+            }
+        }
+    }
+}

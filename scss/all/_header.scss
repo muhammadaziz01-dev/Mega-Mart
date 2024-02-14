@@ -1,0 +1,101 @@
+header {
+    width: 100%;
+
+    // example
+    .nav__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+
+        h3{
+            color: #666;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+
+       &--titilwrap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding-left: 16px;
+                border-left: 1px solid #D9D9D9;
+                color:  #666;
+                text-align: right;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+       }
+    }
+
+    .nav__booton{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 21px 0;
+
+        &--left{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            cursor: pointer;
+        }
+
+        &--sentr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            width: 507px;
+            height: 48px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: var(--Background-3, #F3F9FB);
+            position: relative;
+        
+
+            input{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80% ;
+                height: 100%;
+                border: none;
+                border-radius: 10px;
+                background: var(--Background-3, #F3F9FB);
+                position: relative;  
+            }
+            
+        }
+
+
+        &--right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+    
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                border: none;
+                background-color: #FFF;
+                cursor: pointer;
+            }
+            
+        }
+    }
+
+}
