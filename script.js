@@ -20,10 +20,6 @@ let brand =[];
 
 
 
-
-
-
-
 //-----------CARUSEL ____________________________
 
 // let caruselImge = document.querySelector('.carusel__imge')
@@ -230,3 +226,7 @@ saralshNarh.addEventListener("change" , (el) =>{
   }
 
 })
+
+
+
+
