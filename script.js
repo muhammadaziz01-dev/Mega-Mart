@@ -60,7 +60,7 @@ function rederPradacts(data=[]) {
   cardWrapper.innerHTML="";
     if(data.length>0){
       data.forEach((el)=>{
-        let {thumbnail, price, title, discountPercentage} = el ;
+        let {thumbnail, price, title, discountPercentage, id} = el ;
         //  console.log(el);
           let card = render("div", "section3__cards--card", `
           
@@ -228,5 +228,17 @@ saralshNarh.addEventListener("change" , (el) =>{
 })
 
 
+////////////////////////////////////16.02.2024/////////////////////////
+
+
+// cardWrapper.addEventListener("click" , (e) =>{
+//   let  name = e.target.getAttribute("section3__cards--card");
+
+//   if(name.hasAttribute("class" == "section3__cards--card")){
+//     console.log(true);
+//   }else{
+//     console.log(false);
+//   }
+// })
 
 
