@@ -241,4 +241,56 @@ saralshNarh.addEventListener("change" , (el) =>{
 //   }
 // })
 
+// tasc  Megamarketda izlash (headerda) - Categoriya bo'yicha select UI ga va ishlatiladi - Reytingni o'sish va kamayish bo'yicha filter UI select
 
+//---------------------------praducts reting-----------
+
+let reting = $('#select4');
+
+reting.addEventListener("change" , (e)=>{
+    let retingName = e.target.value;
+    if(retingName=="O'sish"){
+      let retingOsish = product.products.sort((a,b)=> a.rating -b.rating);
+      // console.log(retingOsish);
+      rederPradacts(retingOsish);
+    }else if(retingName =="Kamayish"){
+      let retingKamayish = product.products.sort((a,b)=> b.rating -a.rating);
+      rederPradacts(retingKamayish);
+      // console.log(retingKamayish);
+
+    }
+})
+
+// ----------------------------------praductni carigoriyasi bo'yicha rendirlash---
+
+let test2 = [];
+let test = product.products.filter((el)=>{
+  if(!test2.includes(el.category)){
+    test2.push(el.category)
+  }
+})
+// console.log(test2);
+
+
+let catigorya = $('#select5');
+
+test2.forEach((el)=>{
+    let catigorName = render("option" , `${el}` , el);
+    catigorya.appendChild(catigorName);
+});
+
+catigorya.addEventListener("change" , (el)=>{
+  let renderCatigor = product.products.filter((e)=> e.category == el.target.value);
+  rederPradacts(renderCatigor);
+})
+
+
+////-----------------------------sorch input --------------------
+
+let inputSotch = $("#sorch-input");
+
+inputSotch.addEventListener("input", (el)=> {
+  let inputSotchName = el.target.value
+  let sorchPraduct = product.products.filter((el)=>el.title.toLowerCase().includes(inputSotchName.toLowerCase()));
+  rederPradacts(sorchPraduct);
+})

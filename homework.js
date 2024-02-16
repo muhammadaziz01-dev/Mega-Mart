@@ -81,26 +81,26 @@
 //------------------------------------------objectni o'zbek tiliga o'girish
 
 
-function praducrUzb(data) {
-    return data.map((el)=>{
-        return {id:`${el.id}`,
-        miqdori:`${el.quantity}`,
-        nomi:`${el.title}`,
-        tavsifi:`${el.description}`,
-        narx:`${el.price}`,
-        chegirmUlushi:`${el.discountPercentage}`,
-        rating:`${el.rating}`,
-        aksiya:`${el.stock}`,
-        brand:`${el.brand}`,
-        category:`${el.category}`,
-        eskiz:`${el.thumbnail}`,
-        rasimlar:[`${el.images[0]}`,`${el.images[1]}`,`${el.images[2]}`,`${el.images[3]}`]
-    }
+// function praducrUzb(data) {
+//     return data.map((el)=>{
+//         return {id:`${el.id}`,
+//         miqdori:`${el.quantity}`,
+//         nomi:`${el.title}`,
+//         tavsifi:`${el.description}`,
+//         narx:`${el.price}`,
+//         chegirmUlushi:`${el.discountPercentage}`,
+//         rating:`${el.rating}`,
+//         aksiya:`${el.stock}`,
+//         brand:`${el.brand}`,
+//         category:`${el.category}`,
+//         eskiz:`${el.thumbnail}`,
+//         rasimlar:[`${el.images[0]}`,`${el.images[1]}`,`${el.images[2]}`,`${el.images[3]}`]
+//     }
 
-    })
-}
+//     })
+// }
 
-let neuwData =praducrUzb(product.products);
-console.log(neuwData);
+// let neuwData =praducrUzb(product.products);
+// console.log(neuwData);
 
 
